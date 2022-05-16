@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Tijeras
+  - Cuchilla
+  - Peine
+  - Secador
+  - Champu
+  - Crema_De_Afeitar
   layers:
   - Default
   - TransparentFX
