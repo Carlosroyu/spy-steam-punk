@@ -3549,6 +3549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4652294553065587449, guid: 91bb90764ec8b9748b1684ec6d853ef4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8760136668540515043, guid: 91bb90764ec8b9748b1684ec6d853ef4, type: 3}
       propertyPath: simulationSpeed
       value: 1
@@ -3560,6 +3564,18 @@ PrefabInstance:
     - target: {fileID: 8760136668540515043, guid: 91bb90764ec8b9748b1684ec6d853ef4, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760136668540515043, guid: 91bb90764ec8b9748b1684ec6d853ef4, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760136668540515043, guid: 91bb90764ec8b9748b1684ec6d853ef4, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760136668540515043, guid: 91bb90764ec8b9748b1684ec6d853ef4, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8760136668540515043, guid: 91bb90764ec8b9748b1684ec6d853ef4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
