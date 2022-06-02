@@ -16,7 +16,6 @@ public class OnClick_Start : MonoBehaviour
   const int crema_afeitar_id = 6;
   const int gomina_id = 7;
 
-
   private void OnMouseOver()
   {
       

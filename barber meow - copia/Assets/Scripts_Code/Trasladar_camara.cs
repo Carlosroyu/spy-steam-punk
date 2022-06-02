@@ -40,5 +40,6 @@ public class Trasladar_camara : MonoBehaviour
             yield return gameCamera;
         }
         yield return null;
+        
     }
 }
