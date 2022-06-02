@@ -36,8 +36,6 @@ public class Trasladar_camara : MonoBehaviour
         while(frame/frameCounter < 1){
             gameCamera.transform.position = Vector3.Lerp(initPosition, targetPosition, frame/frameCounter);
             frame++;
-
-            Debug.Log("La puta madre " + frame);
             yield return frame;
             yield return gameCamera;
         }
