@@ -6,6 +6,7 @@ using DialogueEditor;
 public class OnClick_Start : MonoBehaviour
 {
   public NPCConversation myConversation;
+  public GameObject gameCamera;
 
   //Id de los item de la  barberia
   const int Tijeras_id = 1;
@@ -21,6 +22,7 @@ public class OnClick_Start : MonoBehaviour
       
       if(Input.GetMouseButtonDown(0))
       {
+        gameCamera.transform.position = new Vector3(2,-0,-30);
           ConversationManager.Instance.StartConversation(myConversation);
       }
   }
