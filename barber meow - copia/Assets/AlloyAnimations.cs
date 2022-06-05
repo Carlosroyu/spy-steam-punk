@@ -4,27 +4,35 @@ using UnityEngine;
 
 public class AlloyAnimations : MonoBehaviour
 {
-    const float BadHairCut = 0.0f;
-    const float ConMelenaContento = 0.1f;
-    const float SinMelenaContento = 0.2f;
-    const float SinMelenaHablando = 0.3f;
-    const float ConMelenaHablando = 0.4f;
-    const float SinMelenaNeutro = 0.5f;
-    const float ConMelenaNeutro = 0.6f;
-    const float SinMelenaPreocupao = 0.7f;
-    const float ConMelenaPreocupao = 0.8f;
+    //Diccionario personal para saber a que corresponde cada indice de la jerarquia
+    /*const int alloy_neutro = 0;
+    const int alloy_badhaircut = 1;
+    const int alloy_feliz_melena = 2;
+    const int alloy_goodhaircut = 3;
+    const int alloy_habla = 4;
+    const int alloy_habla_melena = 5;
+    const int alloy_neutro_melena = 6;
+    const int alloy_triste = 7;
+    const int alloy_triste_melena = 8;*/
 
-    Animation anim;
-    // Start is called before the first frame update
+    Transform[] Alloy_Expresions;
+    
     void Start()
     {
-        anim = GetComponent<Animation>();
-        anim["Alloy_Expresions"].speed = 0.0f; //["Alloy_Expresions"]
-        changeAnimation(ConMelenaPreocupao);
+        Alloy_Expresions = new Transform[this.transform.childCount];
+        for(var i = 0; i < this.transform.childCount; i++){
+            Alloy_Expresions[i] = this.transform.GetChild(i);
+        }
     }
 
-    void changeAnimation(float time){
-        anim["Alloy_Expresions"].time = time;
+    public void clearSprite(){
+        for(var i = 0; i < this.transform.childCount; i++){
+            Alloy_Expresions[i].gameObject.SetActive(false);
+        }
+    }
+    public void selectSprite(int selection){
+        clearSprite();
+        Alloy_Expresions[selection].gameObject.SetActive(true);
     }
     
 }
