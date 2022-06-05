@@ -5,7 +5,7 @@ using UnityEngine;
 public class Trigger_Animation : MonoBehaviour
 {
 
-    public Animator anim;
+    private Animator anim;
 
     void Start()
     {
@@ -13,7 +13,19 @@ public class Trigger_Animation : MonoBehaviour
     }
    public void Activar_Corte_Pelo()
    {
-       anim.Play("Corte_Anim");
+       anim.SetBool("Corte_Anim", true);
+       anim.SetBool("Idle_Anim", false);
+   }
+   public void Activar_Idea_Pelo()
+   {
+       anim.SetBool("Idea_Anim", true);
+       anim.SetBool("Corte_Anim", false);
+   }
+
+   public void Activar_Pensando_Pelo()
+   {
+       anim.SetBool("Idle_Anim", true);
+       anim.SetBool("Idea_Anim", false);
    }
 
     
