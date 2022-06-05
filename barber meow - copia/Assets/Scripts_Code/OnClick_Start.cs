@@ -23,7 +23,7 @@ public class OnClick_Start : MonoBehaviour
       if(Input.GetMouseButtonDown(0))
       {
         gameCamera.transform.position = new Vector3(2,-0,-30);
-          ConversationManager.Instance.StartConversation(myConversation);
+        ConversationManager.Instance.StartConversation(myConversation);
       }
   }
 }
