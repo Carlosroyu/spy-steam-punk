@@ -17,7 +17,7 @@ public class Barber_Object_Interact : MonoBehaviour
 
   private void OnMouseOver()
   {
-      this.transform.localScale = new Vector3(objScale.x + .3f,objScale.y + .3f,objScale.z + .3f);
+      this.transform.localScale = new Vector3(objScale.x + .1f,objScale.y + .1f,objScale.z + .1f);
       if(Input.GetMouseButtonDown(0))
       {
         clickSound.Play();
